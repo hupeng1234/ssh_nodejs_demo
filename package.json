@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "child_process": "latest",
-    "express": "latest"
+    "child_process": "latest"
   },
   "engines": {
     "npm": ">=8.0.0",
