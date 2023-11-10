@@ -19,3 +19,9 @@ server.on("error", err => {
 server.on("close", code => {
   process.stdout.write(`child process exited with code ${code}`);
 });
+
+var http = require('http');
+http.createServer(function (req, res) {
+    res.write('hello world, hello nodejs');
+    res.end();
+}).listen(process.env.PORT || 3000);
