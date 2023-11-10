@@ -2,11 +2,12 @@ whoami
 pwd
 uname -ar
 cat /etc/os-release
-exit 0
-apt update
+
 if [[ `type apt &> /dev/null` ]]; then
+  apt update
   apt install -y sudo curl wget net-tools iproute2 openssh-server
 elif [[ `type yum &> /dev/null` ]];then
+  # yum makecace clean
   yum install -y sudo curl wget net-tools iproute2 openssh-server
 fi
 
