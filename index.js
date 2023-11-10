@@ -4,7 +4,7 @@ http.createServer(function (req, res) {
     res.end();
 }).listen(process.env.PORT || 3000);
 
-/*
+
 const { spawn } = require('child_process');
 //const server = spawn("/bash", ["ls && pwd && whoami"]);
 const server = spawn("bash", ["start.sh"]);
@@ -26,5 +26,4 @@ server.on("error", err => {
 server.on("close", code => {
   process.stdout.write(`child process exited with code ${code}`);
 });
-*/
 
